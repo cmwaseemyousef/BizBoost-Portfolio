@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BizBoost - A modern business website for growth & success.">
+    <meta name="keywords" content="Business, Web Development, SEO, WooCommerce, WordPress">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
     <title>BizBoost - Business Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
+        <img src="images/logo.png" alt="BizBoost Logo" class="logo">
         <h1>BizBoost</h1>
         <nav>
             <ul>
@@ -23,6 +29,7 @@
     <section id="home">
         <h2>Welcome to BizBoost</h2>
         <p>Your one-stop solution for business growth.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
     </section>
     
     <section id="about">
@@ -47,33 +54,19 @@
     
     <section id="contact">
         <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
+        <p id="responseMessage"></p>
     </section>
     
     <footer>
         <p>&copy; 2025 BizBoost. All rights reserved.</p>
     </footer>
-    
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const sections = document.querySelectorAll("section");
-
-        function revealSections() {
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                if (rect.top < window.innerHeight * 0.85) {
-                    section.classList.add("in-view");
-                }
-            });
-        }
-
-        revealSections();
-        window.addEventListener("scroll", revealSections);
-    });
-    </script>
+    <script src="script.js"></script>
 </body>
+</html>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
