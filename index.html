@@ -58,5 +58,23 @@
     <footer>
         <p>&copy; 2025 BizBoost. All rights reserved.</p>
     </footer>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const sections = document.querySelectorAll("section");
+
+        function revealSections() {
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.85) {
+                    section.classList.add("in-view");
+                }
+            });
+        }
+
+        revealSections();
+        window.addEventListener("scroll", revealSections);
+    });
+    </script>
 </body>
 </html>

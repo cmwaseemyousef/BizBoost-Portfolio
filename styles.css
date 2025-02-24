@@ -123,6 +123,19 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Smooth Fade-in Effect for Sections */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Trigger animation when section enters viewport */
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Footer */
 footer {
     background-color: #343a40;
