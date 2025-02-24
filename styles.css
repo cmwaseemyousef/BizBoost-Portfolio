@@ -143,3 +143,20 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* Call-to-Action Button */
+.cta-button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #e6b800;
+    transform: scale(1.1);
+}
